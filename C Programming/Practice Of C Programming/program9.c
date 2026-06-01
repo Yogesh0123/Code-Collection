@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+void CheckEvenOdd(int iNo)
+{
+     int iRemainder=0;
+
+     iRemainder = iNo % 2;
+
+    if (iRemainder == 0)
+    {
+        printf("Number is even \n");
+    }
+    else
+    {
+        printf("Number is odd \n");
+    }
+}
+
+int main()
+{
+    int ivalue=0;
+
+    printf("Enter number : ");
+    scanf("%d",&ivalue);
+
+    CheckEvenOdd(ivalue);
+    return 0;
+}
